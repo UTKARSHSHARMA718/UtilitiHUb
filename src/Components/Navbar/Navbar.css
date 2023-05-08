@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* difining variables */
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+h3 {
+  font-weight: 300;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 20px;
+  color: #577592;
+  font-weight: 300;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: #183b56;
+}
+/* Untility Classes */
+.center-text {
+  text-align: center;
+}
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.hover-link:hover {
+  color: #2294ed;
+}
+
+.secondary-btn {
+  border: 0.5px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.secondary-btn:hover {
+  border: 0.5px solid #2294ed;
+  color: #2294ed;
+}
+.primary-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #2294ed;
+  color: white;
+  text-align: center;
+}
+
+.primary-btn:hover {
+  background-color: #1d69a3;
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  /* using variable defined above */
+  padding: 16px 30px;
+  overflow: hidden;
+}
+/* banner CSS */
+.banner {
+  background: url("../../assets/asset\ 32.png");
+  background-color: #e74694;
+  background-size: 300px;
+}
+
+.top-announcement {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  word-spacing: 1px;
+}
+
+/* navbar CSS */
+
+.navbar {
+  margin-top: 20px;
+  justify-content: space-between;
+  color: #183b56;
+  position: relative;
+}
+.nav-toggle{
+ display: none;
+}
+.logo img {
+  width: 160px;
+}
+#logo-side-img{
+    /* background: url(../../assets/asset\ 33.svg); */
+    background: url(../../assets/asset\ 33.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.links {
+  flex-basis: 600px;
+}
+
+.links ul {
+  justify-content: end;
+  gap: 20px;
+}
+
+/* header CSS */
+header {
+  padding: 50px 20px 0;
+}
+.heading {
+  justify-content: center;
+  gap: 50px;
+}
+.left-section {
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left-section h1 {
+  margin-top: 20px;
+}
+.left-section p {
+  margin-top: 20px;
+}
+.get-started-btn {
+  margin-top: 20px;
+}
+
+.right-section img {
+  width: 100%;
+}
+
+/* companies logos */
+.customer-orgs-section{
+    margin: 50px 0;
+}
+.companies-logo img {
+  width: 130px;
+}
+.companies-logo {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* features section */
+.features {
+  padding: 80px 20px 0;
+  background: url("../../assets/asset\ 34.svg");
+  background-repeat: no-repeat;
+  /* new property */
+  background-position: center;
+  background-size: 800px;
+  
+}
+.features-heading h2 {
+  margin-bottom: 20px;
+}
+
+.all-features {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  /* background-color: blue; */
+}
+
+.features .card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  text-align: center;
+}
+.features .card img {
+  width: 40px;
+}
+
+.features .card p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #577592;
+}
+
+.features .card h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* facilities */
+
+.image-content img {
+  /* 100% of its parent */
+  width: 100%;
+}
+
+.company-review-logo {
+  height: 35px;
+}
+.customer{
+    gap: 20px;
+}
+.customer img {
+  width: 50px;
+}
+
+.top-heading-text {
+  height: 170px;
+}
+
+.bottom-text {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.company-review {
+  justify-content: space-between;
+  width: 100%;
+  gap: 65px;
+  margin-top: 20px;
+}
+
+.facilities {
+  margin-top: 5rem;
+}
+
+/* usecases */
+.usecases-section{
+    padding: 80px 20px;
+}
+.usecases {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.usecases-card {
+  width: 23%;
+  position: relative;
+  height: 300px;
+  background-color: black;
+  border-radius: 3px;
+}
+.usecases-card:hover {
+  box-shadow: 0 0 10px #888;
+}
+
+.usecases-area {
+  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#u-card-1 {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+    url(../../assets/asset\ 36.jpeg);
+  background-size: cover;
+}
+#u-card-2 {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+    url(../../assets/asset\ 37.jpeg);
+  background-size: cover;
+}
+#u-card-3 {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+    url(./assets/asset\ 38.jpeg);
+  background-size: cover;
+}
+#u-card-4 {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)),
+    url(../../assets/asset\ 39.jpeg);
+  background-size: cover;
+}
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* starting-today-section */
+
+.starting-today-section-text {
+  flex-direction: column;
+  gap: 30px;
+  color: #183b56;
+}
+
+.starting-today-section {
+  padding: 120px 20px 80px;
+  background-color: #ffff;
+  text-align: center;
+}
+
+.starting-today-section p {
+  color: #577592;
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #ebf2fa;
+  padding: 70px;
+}
+.link-list {
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.link-list h3 {
+  font-size: 20px;
+}
+.link-list a {
+  color: #577592;
+}
+
+.footer-section {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* sub-footer-section */
+.sub-footer-section {
+  justify-content: center;
+  gap: 12%;
+  flex-wrap: wrap;
+}
+.sub-footer-icons{
+    justify-content: center;
+    gap: 20px;
+}
+.sub-footer-text {
+  gap: 15px;
+}
+.sub-footer {
+  background-color: #b9cde4;
+}
+
+/*  */
+.pricing-section-container {
+  justify-content: center;
+}
+.pricing-section {
+  background-color: #183b56;
+  margin-top: 30px;
+}
+.content-header {
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.left-text-content h1 {
+  font-size: 40px;
+}
+.left-text-content {
+  flex-direction: column;
+  align-items: start;
+}
+.price-img img {
+  width: 600px;
+}
+
+.panel-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 10px;
+  color: #b9cde4;
+}
+
+.panel-facilities {
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+
+.lang-btn{
+  border: 0px;
+  font-size: 10px;
+}
